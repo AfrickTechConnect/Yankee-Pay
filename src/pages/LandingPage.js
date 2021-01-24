@@ -103,9 +103,9 @@ function LandingPage(props) {
 
               <p className="my-4 font-semibold"> Coming Soon...</p>
               <div className="flex justify-center md:justify-start flex-wrap space-y-3 md:space-y-0 md:space-x-3">
-                <AppLink className="space-x-3 cursor-pointer">
+                <AppLink className="space-x-3 cursor-pointer ">
                   <img src={Play} className="h-10 mt-1" alt="Google Play" />
-                  <p className="w-32 font-medium text-base">
+                  <p className="md:w-32 mt-2 md:mt-0 font-medium text-base">
                     Download on Google Play
                   </p>
                 </AppLink>
