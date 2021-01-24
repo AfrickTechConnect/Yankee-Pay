@@ -28,9 +28,9 @@ function Header(props) {
 
       <div className="hidden md:block mr-52 mt-8 ">
         <Ul className="space-x-16">
-          <li className="cursor-pointer">About Us</li>
-          <li className="cursor-pointer">Account</li>
-          <li className="cursor-pointer">Contact Us</li>
+          <li className="cursor-pointer font-semibold">Home</li>
+          <li className="cursor-pointer font-semibold">About Us</li>
+          <li className="cursor-pointer font-semibold">Contact Us</li>
         </Ul>
       </div>
       <div className="block md:hidden mr-14 mt-6">

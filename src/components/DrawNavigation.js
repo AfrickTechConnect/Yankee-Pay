@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Logo } from "../assets";
 import { FaHome, FaInfo, FaUserFriends } from "react-icons/fa";
@@ -36,10 +36,21 @@ const ImageContainer = styled.div`
 
 function DrawNavigation(props) {
   const [isMenuOpen, setIsMenuOpen] = useMenuContext();
+
+  useEffect(() => {
+    const x = window.scrollX;
+    const y = window.scrollY;
+    window.onscroll = () => window.scrollTo(x, y);
+
+    return () => {
+      window.onscroll = () => {};
+    };
+  }, []);
+
   return (
     <StyledDrawNavigation>
       <ImageContainer className="flex justify-center">
-        <img src={Logo} alt="Logo" className="h-36" />
+        <img src={Logo} alt="Logo" className="h-28" />
       </ImageContainer>
       <div className="mt-16 flex flex-col text-lg font-normal">
         <Ul>
